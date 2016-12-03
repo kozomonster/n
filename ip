@@ -1,0 +1,1 @@
+cat ip.txt | sed s/\\r//g |while read -r ip; do echo iptables -A INPUT -s $ip -j DROP; done
